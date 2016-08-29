@@ -1,6 +1,8 @@
 # Introduction
 
-I have designed a workflow for when I practice animation. This is Mono. It offers a pipeline that caters to the stages of animation production. I consider the stages of development, preproduction, shotproduction, preproduction, and distribution.
+I have designed a workflow for when I practice animation. This is Mono. Mono sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline which caters to the different stages of animation production &mdash; development, preproduction, shotproduction, preproduction, and distribution.
+
+I made Mono for various reasons. First, devising how to store the files weighed heavy on me each time I did an exercise. Second, inconsistencies arose between each exercise more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. What did I need? I needed a consistent workflow; I need a pipeline.
 
 <!-- Feels like the paragraph above needs more here. -->
 
@@ -9,14 +11,6 @@ This is a living document. It is updated when I need to make improvements to it.
 ## Goal
 
 * Develop standardized rules and conventions to guide production of an animation exercise or very short animated film.
-
-## What is Mono?
-
-Mono is a workflow that sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline.
-
-## Background
-
-I made Mono because I had found that inconsistencies arose between each of my productions as I animated more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. I soon identified the issue at hand to be the result of an unestablished production pipeline. I needed a consistent workflow. And that was how I conceived Mono.
 
 
 # Design
