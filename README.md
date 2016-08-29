@@ -1,16 +1,23 @@
 # Introduction
 
-I have designed a convention to standardize a workflow for my exercises and animation practices. This is Mono. It caters to the stages of animation production, which include development, preproduction, shotproduction, preproduction, and distribution, offering a standard pipeline.
+I have designed a convention to standardize a workflow for when I practice animation. This is Mono. It offers a pipeline that caters to the stages of animation production. I consider the stages of development, preproduction, shotproduction, preproduction, and distribution. <!-- Feels like the paragraph needs more here. -->
 
-This is a living document. I update it when I need to make improvements. My intention is for Mono to evolve into something useful.
+This is a living document. It is updated when I need to make improvements to it. My intention is for Mono to evolve into something useful.
 
 ## Goal
 
-Develop standardized rules and conventions to guide production of an animation exercise or very short animated film.
+* Develop standardized rules and conventions to guide production of an animation exercise or very short animated film.
 
 ## What is Mono?
 
 Mono is a workflow that establishes rules and conventions that guide the production of animation exercises. The workflow features a production pipeline and methods of asset management. Mono is designed explicitly for animation exercises (though this may change in the future as Mono grows and adapts to the needs and wants of its user).
+
+A pipeline according to Urchin,
+
+> Production pipeline can be considered to be an amalgam of
+> * Production Software; i.e. what you use to make stuff, which spills into file formats and capabilities, can also include automation / project specific software that depends on project practices.
+> * Standards and Best practices: naming conventions, project file organization, dos and don’ts, limits on poly count, image size, etc.
+> * Pipeline software: any software or scripts that automate the pipline, project on a metalevel, or enforce the best practices, or better, allow only those best practices to be used (i.e. instead of using append/link, use the project approved asset manager, which only links in predictable ways)
 
 Mono treats animation exercises as very short films. An animation exercise and an animated short film share many similarities. What sets them apart is their quality.
 
@@ -39,109 +46,115 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
 
 # Directory layout
 
-/Source                                                                         contains originals for project files and exports
-   /
-/Exports                                                                        contains deliverables
-/ProjectFiles                                                                   contains project files
+    /Source                                                                         contains originals for project files and exports
+       /
+    /Exports                                                                        contains deliverables
+    /ProjectFiles                                                                   contains project files
 
-{ProjectName}
-Assets
-Assets\audio
-Assets\audio\music
-Assets\audio\music\m01_Artist_Title.wav
-Assets\audio\music\m01_Artist_Title.txt
-           score
-               s01_Composer_Title.wav
-               s01_Composer_Title.txt
-           voicerough
-               CharacterName_sc01_Blurb.wav
-           voicefinal
-               CharacterName_sc01_Blurb.wav
-           sfxrough
-               sc01_fr001_sh01sc05_Description.wav
-           sfxfinal
-               sc01_ff001_sh01sc05_Description.wav
-       readme
-           Exercise.txt
-           Readme.txt
-       story
-           Concept.txt
-           Script.txt
-       characters
-           Starlord
-               reference
-               model
-               art
-       environments
-           Space
-               reference
-               model
-               art
-       props
-           Laser
-               references
-               model
-               art
-       storyboard
-           sb_p01_r1.png
-       titles
-           opening
-               references
-               art
-           intertitle
-               references
-               art
-           subtitle
-               references
-               art
-           closing
-               references
-               art
-       storyboard
-           p01.png
-       animatic
-           a01_r01_yyyymmdd.mov
-       layout
-           sc01_sh01,sh04.png                                                  ; A layout can be used for several scenes
-           sc01_sh05.png
-           sc01_sh06-sh10.png
-       shot
-           bg                                                                  ; Background art lives outside the sequence and shot folder, because a single background art can be used in multiple shots across different scenes. By keeping background art in a fixed location, we can reference background across different shots.
-               bg01_starshipLobbyStairWide.psd
-               bg01_starshipLobbyStairWide.png
-               ...
-           sq01_chase
-               sc01
-                   sc01_dopesheet.psd
-                   sc01_sh1
-                       sc01_sh01.tvp
-                       rough
-                           rough_sc01_sh01_f0001.tiff
-                           ...
-                       cleanup
-                           cleanup_sc01_sh01_f0001.tiff
-                           ...
-                       paintandink
-                           paintandink_sc01_sh01_f0001.tiff
-                           ...
-                       final
-                           final_sc01_sh01_f0001.tiff
-                           ...
-   Deliverables
-       video
-       audio
-       images
+    {ProjectName}
+        Assets
+            audio
+                music
+                    m01_Artist_Title.wav
+                    m01_Artist_Title.txt
+                score
+                    s01_Composer_Title.wav
+                    s01_Composer_Title.txt
+                voicerough
+                    CharacterName_sc01_Blurb.wav
+                voicefinal
+                    CharacterName_sc01_Blurb.wav
+                sfxrough
+                    sc01_fr001_sh01sc05_Description.wav
+                sfxfinal
+                    sc01_ff001_sh01sc05_Description.wav
+            readme
+                Exercise.txt
+                Readme.txt
+            story
+                Concept.txt
+                Script.txt
+            characters
+                Starlord
+                    reference
+                    model
+                    art
+            environments
+                Space
+                    reference
+                    model
+                    art
+            props
+                Laser
+                    references
+                    model
+                    art
+            storyboard
+                sb_p01_r1.png
+            titles
+                opening
+                    references
+                    art
+                intertitle
+                    references
+                    art
+                subtitle
+                    references
+                    art
+                closing
+                    references
+                    art
+            storyboard
+                p01.png
+            animatic
+                a01_r01_yyyymmdd.mov
+            layout
+                sc01_sh01,sh04.png                                                  ; A layout can be used for several scenes
+                sc01_sh05.png
+                sc01_sh06-sh10.png
+            shot
+                bg                                                                  ; Background art lives outside the sequence and shot folder, because a single background art can be used in multiple shots across different scenes. By keeping background art in a fixed location, we can reference background across different shots.
+                    bg01_starshipLobbyStairWide.psd
+                    bg01_starshipLobbyStairWide.png
+                    ...
+                sq01_chase
+                    sc01
+                        sc01_dopesheet.psd
+                        sc01_sh1
+                            sc01_sh01.tvp
+                            rough
+                                rough_sc01_sh01_f0001.tiff
+                                ...
+                            cleanup
+                                cleanup_sc01_sh01_f0001.tiff
+                                ...
+                            paintandink
+                                paintandink_sc01_sh01_f0001.tiff
+                                ...
+                            final
+                                final_sc01_sh01_f0001.tiff
+                                ...
+        Deliverables
+            video
+            audio
+            images
 
-   ProjectFiles
-       shotprod
-           bg
-               bg_starshipLobby.psd
-           sq01_chase
-               sc01_sh1
-       edit
-           premiere
-               edit.prproj
+        ProjectFiles
+            shotprod
+                bg
+                    bg_starshipLobby.psd
+                sq01_chase
+                    sc01_sh1
+            edit
+                premiere
+                    edit.prproj
+            video
+                animatic
+                    a01_r01_yyyymmdd.mov
 
-       video
-           animatic
-               a01_r01_yyyymmdd.mov
+
+# Reading
+
+These writings helped me a lot in understanding what I was making:
+
+* [Managing Animation Pipelines (on Internet Archive)](http://web.archive.org/web/20160525161931/https://urchn.org/post/managing-animation-pipelines) by [Urchin](https://urchn.org)
