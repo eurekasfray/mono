@@ -1,6 +1,6 @@
 # Introduction
 
-I have designed a convention to standardize a workflow for when I practice animation. This is Mono. It offers a pipeline that caters to the stages of animation production. I consider the stages of development, preproduction, shotproduction, preproduction, and distribution.
+I have designed a workflow for when I practice animation. This is Mono. It offers a pipeline that caters to the stages of animation production. I consider the stages of development, preproduction, shotproduction, preproduction, and distribution.
 
 <!-- Feels like the paragraph above needs more here. -->
 
