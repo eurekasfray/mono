@@ -207,9 +207,9 @@ TBD
 
 `Shot` is short for `shotproduction`. This folder has the following conventions:
 
-<!-- Let each paragraph have a consistent number of characters like say 260 -->
+<!-- Let each paragraph have a consistent number of characters like say 400 -->
 
-* `bg` (*folder*): Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence, scene, and shot folders, residing in its own space. By keeping background art in a fixed location, backgrounds can be referenced to. Different shots can reference a single background. This makes us happy.
+* `bg` (*folder*): Stores background art. Because a single background art can be used in multiple shots, background art lives outside the sequence, scene, and shot folders, and resides in its own space. This makes us happy. Backgrounds can be referenced to since they're kept in a fixed location. Different shots can reference a single background.
 * `bg\bg01_starshipLobbyStairWide.psd` (*project file*): This is the project file for a background. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
 * `bg\bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. This file's name must be the same as the file from which it was exported. Its filename is written like this: *bg[n]_[name].[exportExt]*.
 
