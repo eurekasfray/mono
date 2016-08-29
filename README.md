@@ -207,19 +207,28 @@ TBD
 
 This folder has the following conventions:
 
-* bg: `folder` Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence and shot folder. By keeping background art in a fixed location, we can reference background across different shots.
-* bg\bg*n*_*name*.*projectExt*: `project file` e.g. bg01_starshipLobbyStairWide.psd; 
-* bg\bg*n*_*name*.*exportExt*: `exported file` Example: `bg01_starshipLobbyStairWide.png`.
-* sq*n*_*name*: `folder` Example: `sq01_chase`.
-* sq*n*_*name*\sc*n*: `folder`
-* sq*n*_*name*\sc*n*\sc*n*_dopesheet.*projectExt*: `project file` Example: `sc01_dopesheet.psd`.
-* sq*n*_*name*\sc*n*\sc*n*_sh*n*: `folder`
-* sq*n*_*name*\sc*n*\sc*n*_sh*n*\sc*n*_sh*n*.*projectExt*: `project file` Example: `sc01_sh01\sc01_sh01.tvpaint`.
+* `bg` (*folder*): Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence and shot folder. By keeping background art in a fixed location, we can reference background across different shots.
+* `bg\bg01_starshipLobbyStairWide.psd` (*project file*): This is a background project file. Its filename goes like this: `bg[n]_[name].[projectExt]`. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
+* `bg\bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. This file's name must be the same as the file from which it was exported. Its filename is written like this: `bg[n]_[name].[exportExt]`.
+
+A film is broken down into sequences, scenes, and shots. A film is a continous series of sequences. Each sequence is make of up of series of scenes, and each scene is made of up of a series of shots. I've broken down each part.
+
+* `sq01_chase` (*folder*): A sequence; stores scenes that help make it up. A sequence has an number and can be given a name, and is written like this: **sq[n]_[name]**.
+* `sq01_chase\sc01` (*folder*): A scene. Each scene is numbered. Each scene folder is written like this: **sc[n]**.
+* `sq01_chase\sc01\sc01_dopesheet.psd` (*project file*): The dope or exposure sheet. The dope sheet is named like this: `sc[n]_dopesheet.[projectExt]`. It keeps the scene number as *n*.
+* `sq01_chase\sc01\sc01_sh01` (*folder*): This is a shot folder. A shot folder takes the scene number and gets a shot number. We name a shot folder like this: **sc[n]_sh[n]**.
+* `sq01_chase\sc01\sc01_sh01\sc01_sh01.tvpaint` (*project file*): A shot animation project file. Animation work is done in this project file. It takes the scene number and the shot number. We name this file like this: **sc[n]_sh[n].[projectExt]**.
 
 
 # Deliverables
 
 **Storage & organization**
+
+
+# Conventions
+
+* *n* may padded with zeroes (e.g. 001) or it may not (e.g. 1).
+* *name* is written in lowerCamelCase,
 
 
 # Reading
