@@ -21,7 +21,7 @@ I made Mono because I had found that inconsistencies arose between each of my pr
 
 # Design
 
-## pipeline
+## Pipeline
 
 A production pipeline according to Urchin
 
@@ -59,7 +59,7 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
         Assets
             audio
                 music
-                    m01_Artist_Title.wav
+                    m01_Artist_Title.ext
                     m01_Artist_Title.txt
                 score
                     s01_Composer_Title.wav
