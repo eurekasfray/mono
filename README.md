@@ -204,7 +204,7 @@ TBD
 <!-- Let each paragraph have a consistent number of characters like say 400 -->
 
 * `bg` (*folder*): Stores background art. Because a single background art can be used in multiple shots, background art lives outside the sequence, scene, and shot folders, and resides in its own space. This makes us happy. Backgrounds can be referenced to since they're kept in a fixed location. Different shots can reference a single background.
-* `bg\bg01_starshipLobbyStairWide.psd` (*project file*): This is the project file for a background. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
+* bg\\`bg01_starshipLobbyStairWide.psd` (*project file*): This is the project file for a background. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
 * `bg\bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. This file's name must be the same as the file from which it was exported. Its filename is written like this: *bg[n]_[name].[exportExt]*.
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes, which is composed of a series of shots. I've broken down each part into an orginization of folders.
