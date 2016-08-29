@@ -47,6 +47,8 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
 
 * Principle 4. Flexibility. Offer enough of a framework for flexibility.
 
+* Principle 5. DRY. Don't repeat yourself. This applies to directory names. Do not use file organization that requires for you to have two or layouts that repeat each other.
+
 
 # Directory layout
 
@@ -59,7 +61,7 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
         Assets
             audio
                 music
-                    m01_Artist_Title.ext
+                    m01_Artist_Title.psd
                     m01_Artist_Title.txt
                 score
                     s01_Composer_Title.wav
@@ -108,16 +110,17 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
                 closing
                     references
                     art
-            storyboard
-                p01.png
             animatic
                 a01_r01_yyyymmdd.mov
             layout
-                sc01_sh01,sh04.png                                                  ; A layout can be used for several scenes
+                sc01_sh01,sh04.png ; A layout can be used for several scenes
                 sc01_sh05.png
                 sc01_sh06-sh10.png
             shot
-                bg                                                                  ; Background art lives outside the sequence and shot folder, because a single background art can be used in multiple shots across different scenes. By keeping background art in a fixed location, we can reference background across different shots.
+                bg ; Because a single background art can be used in multiple
+                shots across different scenes, background art lives outside the
+                sequence and shot folder. By keeping background art in a fixed
+                location, we can reference background across different shots.
                     bg01_starshipLobbyStairWide.psd
                     bg01_starshipLobbyStairWide.png
                     ...
@@ -152,9 +155,63 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
             edit
                 premiere
                     edit.prproj
+                animatic
+                    a01_r01_yyyymmdd.prproj
             video
                 animatic
                     a01_r01_yyyymmdd.mov
+
+
+# Assets
+
+**Storage & organization**
+
+TBD
+
+## Story
+
+    Assets\story
+
+## Audio
+
+    Assets\audio
+
+## Characters
+
+    Assets\characters
+
+## Environments
+
+    Assets\environments
+
+## Props
+
+    Assets\props
+
+## Titles
+
+    Assets\titles
+
+## Storyboard
+
+    Assets\storyboard
+
+## Animatic
+
+    Assets\animatic
+
+## Layout
+
+    Assets\layout
+
+## Shot
+
+    Assets\shot
+
+
+# Deliverables
+
+**Storage & organization**
 
 
 # Reading
