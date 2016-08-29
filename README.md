@@ -23,12 +23,12 @@ I made Mono because I had found that inconsistencies arose between each of my pr
 
 ## Pipeline
 
-A production pipeline according to Urchin
-
-> can be considered to be an amalgam of
+A production pipeline according to Urchin "can be considered to be an amalgam of"
 > * Production Software; i.e. what you use to make stuff, which spills into file formats and capabilities, can also include automation / project specific software that depends on project practices.
 > * Standards and Best practices: naming conventions, project file organization, dos and don’ts, limits on poly count, image size, etc.
 > * Pipeline software: any software or scripts that automate the pipline, project on a metalevel, or enforce the best practices, or better, allow only those best practices to be used (i.e. instead of using append/link, use the project approved asset manager, which only links in predictable ways)
+>
+> *[Urchin](https://urchn.org), [Managing Animation Pipelines (on Internet Archive)](http://web.archive.org/web/20160525161931/https://urchn.org/post/managing-animation-pipelines)*
 
 ## Principles
 
