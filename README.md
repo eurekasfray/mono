@@ -199,7 +199,7 @@ TBD
 
     Assets\shot
 
-`Shot` is short for `shotproduction`. This folder has the following conventions:
+`shot` is short for 'shotproduction'. This folder has the following conventions:
 
 <!-- Let each paragraph have a consistent number of characters like say 400 -->
 
@@ -211,7 +211,7 @@ A film can be broken down into sequences, scenes, and shots. A film is a series 
 
 * **`sq01_chase`** (*folder*): A sequence; stores scenes that help make it up. A sequence has an number and can be given a name, and is written like this: *sq[n]_[name]*.
 * **sq01_chase\\****`sc01`** (*folder*): A scene. Each scene is numbered. Each scene folder is written like this: *sc[n]*.
-* **sq01_chase\sc01\\****`sc01_dopesheet.psd`** (*project file*): The dope or exposure sheet. The dope sheet is named like this: `sc[n]_dopesheet.[projectExt]`. It keeps the scene number as *n*.
+* **sq01_chase\sc01\\****`sc01_dopesheet.psd`** (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. It keeps the scene number as *n*.
 * **sq01_chase\sc01\\****`sc01_sh01`** (*folder*): This is a shot folder. A shot folder takes the scene number and gets a shot number. We name a shot folder like this: *sc[n]_sh[n]*.
 * **sq01_chase\sc01\sc01_sh01\\****`sc01_sh01.tvpaint`** (*project file*): A shot animation project file. Animation work is done in this project file. It takes the scene number and the shot number. We name this file like this: *sc[n]_sh[n].[projectExt]*.
 
