@@ -208,6 +208,17 @@ TBD
 
     Assets\shot
 
+This folder has the following conventions:
+
+* `bg`: Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence and shot folder. By keeping background art in a fixed location, we can reference background across different shots.
+* `bg\bg*n*_*name*.*ext*`: Example:
+* `sc*n*_*name*`:
+* `sc*n*_dopesheet.psd`:
+* `sc*n*_sh*n*`:
+* `sc*n*_sh*n*`:
+* `sc*n*_sh*n*\sc*n*_sh*n*.projectFileExt`: Example: `bg01_starshipLobbyStairWide.psd`.
+* `sc01_sh01.tvp.tvpaint`.
+
 
 # Deliverables
 
