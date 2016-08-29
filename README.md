@@ -205,12 +205,12 @@ TBD
 
     Assets\shot
 
-This folder has the following conventions:
+`Shot` is short for `shotproduction`. This folder has the following conventions:
 
-<!-- Let each paragraph have a consistent number of characters -->
+<!-- Let each paragraph have a consistent number of characters like say 260 -->
 
-* `bg` (*folder*): Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence and shot folder. By keeping background art in a fixed location, we can reference background across different shots.
-* `bg\bg01_starshipLobbyStairWide.psd` (*project file*): This is a background project file. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
+* `bg` (*folder*): Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence, scene, and shot folders, residing in its own space. By keeping background art in a fixed location, backgrounds can be referenced to. Different shots can reference a single background. This makes us happy.
+* `bg\bg01_starshipLobbyStairWide.psd` (*project file*): This is the project file for a background. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
 * `bg\bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. This file's name must be the same as the file from which it was exported. Its filename is written like this: *bg[n]_[name].[exportExt]*.
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes, which is composed of a series of shots. I've broken down each part into an orginization of folders.
