@@ -2,9 +2,9 @@
 
 I have designed a workflow for when I practice animation. This is Mono. Mono sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline which caters to the different stages of animation production &mdash; development, preproduction, shotproduction, preproduction, and distribution.
 
-I made Mono for various reasons. First, devising how to store the files weighed heavy on me each time I did an exercise. Second, inconsistencies arose between each exercise more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. What did I need? I needed a consistent workflow; I need a pipeline.
+I made Mono for various reasons. First, devising how to store the files weighed heavy on me each time I did an exercise. Second, inconsistencies arose between each exercise more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. What did I need? I needed a consistent workflow; I needed a pipeline.
 
-<!-- Feels like the paragraph above needs more here. -->
+<!-- ^ Feels like the paragraph above needs more -->
 
 This is a living document. It is updated when I need to make improvements to it. My intention is for Mono to evolve into something useful.
 
@@ -33,15 +33,15 @@ TODO:
 Make each principle in the following format: Principle {n}. {Title}. {Paragraph about with about 160 characters}.
 -->
 
-* Principle 1. Originals and derivatives. Separate derived files from their originals. By keeping the original files in one place we can link derived files back to the originals. This applies to linking project files to source files.
+* **Principle 1** - Originals and derivatives. Separate derived files from their originals. By keeping the original files in one place we can link derived files back to the originals. This applies to linking project files to source files.
 
-* Principle 2. Organization describes how files are grouped according to content, usage or value.
+* **Principle 2** - Organization. This describes how files are grouped according to content, usage or value.
 
-* Principle 3. -- Storage is how you handle the files: What's in a folder? What folder names you use? How you design the folder hierarchy.
+* **Principle 3** - Storage. How do you handle the files: What's in a folder? What folder names you use? How you design the folder hierarchy.
 
-* Principle 4. Flexibility. Offer enough of a framework for flexibility.
+* **Principle 4** - Flexibility. Offer enough of a framework for flexibility.
 
-* Principle 5. DRY. Don't repeat yourself. This applies to directory names. Do not use file organization that requires for you to have two or layouts that repeat each other.
+* **Principle 5** - DRY (Don't repeat yourself). This applies to directory names. Do not use file organization that requires for you to have two or layouts that repeat each other.
 
 
 # Directory layout
@@ -232,3 +232,5 @@ A film can be broken down into sequences, scenes, and shots. A film is a series 
 The articles below helped me a lot in understanding what I needed to make:
 
 * [Managing Animation Pipelines (on Internet Archive)](http://web.archive.org/web/20160525161931/https://urchn.org/post/managing-animation-pipelines) by [Urchin](https://urchn.org)
+* [How does Pixar organize files?](https://www.quora.com/How-does-Pixar-organize-files) on [Quora](https://www.quora.com)
+* [File Management Overview](http://www.dpbestflow.org/file-management/file-management-overview) by Richard Anderson and Peter Krogh
