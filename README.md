@@ -1,6 +1,8 @@
 # Introduction
 
-I have designed a convention to standardize a workflow for when I practice animation. This is Mono. It offers a pipeline that caters to the stages of animation production. I consider the stages of development, preproduction, shotproduction, preproduction, and distribution. <!-- Feels like the paragraph needs more here. -->
+I have designed a convention to standardize a workflow for when I practice animation. This is Mono. It offers a pipeline that caters to the stages of animation production. I consider the stages of development, preproduction, shotproduction, preproduction, and distribution.
+
+<!-- Feels like the paragraph above needs more here. -->
 
 This is a living document. It is updated when I need to make improvements to it. My intention is for Mono to evolve into something useful.
 
@@ -10,23 +12,25 @@ This is a living document. It is updated when I need to make improvements to it.
 
 ## What is Mono?
 
-Mono is a workflow that establishes rules and conventions that guide the production of animation exercises. The workflow features a production pipeline and methods of asset management. Mono is designed explicitly for animation exercises (though this may change in the future as Mono grows and adapts to the needs and wants of its user).
+Mono is a workflow that sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline.
 
-A pipeline according to Urchin,
+## Background
 
-> Production pipeline can be considered to be an amalgam of
+I made Mono because I had found that inconsistencies arose between each of my productions as I animated more and more. Production assets had varying -- and often changing -- names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. I soon identified the issue at hand to be the result of an unestablished production pipeline. I needed a consistent workflow. And that was how I conceived Mono.
+
+
+# Design
+
+## pipeline
+
+A production pipeline according to Urchin
+
+> can be considered to be an amalgam of
 > * Production Software; i.e. what you use to make stuff, which spills into file formats and capabilities, can also include automation / project specific software that depends on project practices.
 > * Standards and Best practices: naming conventions, project file organization, dos and don’ts, limits on poly count, image size, etc.
 > * Pipeline software: any software or scripts that automate the pipline, project on a metalevel, or enforce the best practices, or better, allow only those best practices to be used (i.e. instead of using append/link, use the project approved asset manager, which only links in predictable ways)
 
-Mono treats animation exercises as very short films. An animation exercise and an animated short film share many similarities. What sets them apart is their quality.
-
-## Background
-
-Mono was designed to solve an issue that I faced. I had found that the process of making animation exercises arose increasing inconsistencies between each of my productions. Production assets had varying -- and often changing -- names and hierarchical organizations. What was one thing during the last production was a another during the next one. I soon identified the issue at hand to be the result of an unestablished production pipeline and unestablished means of managing production assets. Obviously, I needed a consistent workflow. That was the conception of Mono.
-
-
-# Principles
+## Principles
 
 The file-organization conventions follows some principles that allow it to be useful.
 
@@ -155,6 +159,6 @@ Make each principle in the following format: Principle {n}. {Title}. {Paragraph 
 
 # Reading
 
-These writings helped me a lot in understanding what I was making:
+The articles below helped me a lot in understanding what I needed to make:
 
 * [Managing Animation Pipelines (on Internet Archive)](http://web.archive.org/web/20160525161931/https://urchn.org/post/managing-animation-pipelines) by [Urchin](https://urchn.org)
