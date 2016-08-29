@@ -1,6 +1,6 @@
 # Introduction
 
-I have designed a workflow for when I practice animation. This is Mono. Mono sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline which caters to the different stages of animation production &mdash; development, preproduction, shotproduction, preproduction, and distribution.
+I have designed a workflow for when practicing animation. This is Mono. Mono sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline which caters to the different stages of animation production &mdash; development, preproduction, shotproduction, preproduction, and distribution.
 
 I made Mono for various reasons. First, devising how to store the files weighed heavy on me each time I did an exercise. Second, inconsistencies arose between each exercise more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. What did I need? I needed a consistent workflow; I needed a pipeline.
 
@@ -29,15 +29,15 @@ A production pipeline according to Urchin "can be considered to be an amalgam of
 The file-organization conventions follows some principles that allow it to be useful.
 
 <!--
-TODO:
-Make each principle in the following format: Principle {n}. {Title}. {Paragraph about with about 160 characters}.
+Note:
+* Each principle must be written in the following format: Principle {n}. {Title}. {Paragraph about 185-200 characters long}.
 -->
 
-* **Principle 1** - Originals and derivatives. Separate derived files from their originals. By keeping the original files in one place we can link derived files back to the originals. This applies to linking project files to source files.
+* **Principle 1** - Originals and derivatives. Separate derived files from their originals. By keeping the original files in one place we can link derived files back to the originals. This means we can link source files to project files.
 
-* **Principle 2** - Organization. This describes how files are grouped according to content, usage or value.
+* **Principle 2** - Storage. How do you handle the files: What's in a folder? What folder names you use? How you design the folder hierarchy.
 
-* **Principle 3** - Storage. How do you handle the files: What's in a folder? What folder names you use? How you design the folder hierarchy.
+* **Principle 3** - Organization. This describes how files are grouped according to content, usage or value. 
 
 * **Principle 4** - Flexibility. Offer enough of a framework for flexibility.
 
