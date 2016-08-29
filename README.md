@@ -16,7 +16,7 @@ Mono is a workflow that sets rules and conventions to guide me along when I'm st
 
 ## Background
 
-I made Mono because I had found that inconsistencies arose between each of my productions as I animated more and more. Production assets had varying -- and often changing -- names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. I soon identified the issue at hand to be the result of an unestablished production pipeline. I needed a consistent workflow. And that was how I conceived Mono.
+I made Mono because I had found that inconsistencies arose between each of my productions as I animated more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. I soon identified the issue at hand to be the result of an unestablished production pipeline. I needed a consistent workflow. And that was how I conceived Mono.
 
 
 # Design
@@ -207,14 +207,14 @@ TBD
 
 This folder has the following conventions:
 
-* `bg`: Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence and shot folder. By keeping background art in a fixed location, we can reference background across different shots.
-* `bg\bg*n*_*name*.*projectExt*`: Example: `bg01_starshipLobbyStairWide.psd`.
-* `bg\bg*n*_*name*.*exportExt*`: Example: `bg01_starshipLobbyStairWide.png`.
-* `sq*n*_*name*`: Example: `sc01_chase`.
-* `sq*n*_*name*\sc*n*`:
-* `sq*n*_*name*\sc*n*\sc*n*_dopesheet.*projectExt*`: Example: `sc01_dopesheet.psd`.
-* `sq*n*_*name*\sc*n*\sc*n*_sh*n*`:
-* `sq*n*_*name*\sc*n*\sc*n*_sh*n*\sc*n*_sh*n*.*projectExt*`: Example: `sc01_sh01\sc01_sh01.tvpaint`.
+* **bg**: `folder` Stores background art. Because a single background art can be used in multiple shots across different scenes, background art lives outside the sequence and shot folder. By keeping background art in a fixed location, we can reference background across different shots.
+* **bg\bg*n*_*name*.*projectExt***: `project file` Example: `bg01_starshipLobbyStairWide.psd`.
+* **bg\bg*n*_*name*.*exportExt***: `exported file` Example: `bg01_starshipLobbyStairWide.png`.
+* **sq*n*_*name***: `folder` Example: `sc01_chase`.
+* **sq*n*_*name*\sc*n***: `folder`
+* **sq*n*_*name*\sc*n*\sc*n*_dopesheet.*projectExt***: `project file` Example: `sc01_dopesheet.psd`.
+* **sq*n*_*name*\sc*n*\sc*n*_sh*n***: `folder`
+* **sq*n*_*name*\sc*n*\sc*n*_sh*n*\sc*n*_sh*n*.*projectExt***: `project file` Example: `sc01_sh01\sc01_sh01.tvpaint`.
 
 
 # Deliverables
