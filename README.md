@@ -53,21 +53,23 @@ The file-organization conventions follows some principles that allow it to be us
         Assets/
             audio/
                 music/
-                    m01_Artist_Title.mp3
-                    m01_Artist_Title.txt
+                    music_Artist_Title.mp3
+                    music_Artist_Title.txt
                 score/
-                    s01_Composer_Title.wav
-                    s01_Composer_Title.txt
+                    score_Composer_Title.wav
+                    score_Composer_Title.txt
                 voicerough/
-                    CharacterName_sc01_Blurb.wav
+                    voicer_CharacterName_sc01_Blurb.wav
                 voicefinal/
-                    CharacterName_sc01_Blurb.wav
+                    voicef_CharacterName_sc01_Blurb.wav
                 sfxrough/
-                    sc01_fr001_sh01sc05_Description.wav
+                    sfxr_sc01_fr001_sh01sc05_Description.wav
                 sfxfinal/
-                    sc01_ff001_sh01sc05_Description.wav
+                    sfxf_sc01_ff001_sh01sc05_Description.wav
                 foleyrough/
+                    foleyr_sc01
                 foleyfinal/
+                    foleyf
             readme/
                 Exercise.txt
                 Readme.txt
@@ -104,57 +106,46 @@ The file-organization conventions follows some principles that allow it to be us
                 closing/
                     references/
                     art/
-            animatic
+            animatic/
                 a01_r01_yyyymmdd.prproj
                 a01_r01_yyyymmdd.mov
-            layout
+            layout/
                 sc01_sh01,sh04.png ; A layout can be used for several scenes
                 sc01_sh05.png
                 sc01_sh06-sh10.png ; A layout can be used in a range of shots
-            shot
-                bg
+            shot/
+                bg/
                     bg01_starshipLobbyStairWide.psd
                     bg01_starshipLobbyStairWide.png
                     ...
-                sq01_chase
-                    sc01
+                sq01_chase/
+                    sc01/
                         sc01_dopesheet.psd
-                        sc01_sh1
+                        sc01_sh1/
                             sc01_sh01.tvp
-                            rough
+                            rough/
                                 rough_sc01_sh01_f0001.tiff
                                 ...
-                            tiedown
+                            tiedown/
                                 tiedown_sc01_sh01_f0001.tiff
                                 ...
-                            line (cleanup)
+                            cleanup/
                                 cleanup_sc01_sh01_f0001.tiff
                                 ...
-                            color
-                                paintandink_sc01_sh01_f0001.tiff
+                            line+color/
+                                lineandcolor_sc01_sh01_f0001.tiff
                                 ...
-                            final
+                            final/
                                 final_sc01_sh01_f0001.tiff
                                 ...
-        Deliverables
-            video
-            audio
-            images
-
-        ProjectFiles
-            shotprod
-                bg
-                    bg_starshipLobby.psd
-                sq01_chase
-                    sc01_sh1
-            edit
-                premiere
+            post/
+                edit/
                     edit.prproj
-                animatic
-                    a01_r01_yyyymmdd.prproj
-            video
-                animatic
-                    a01_r01_yyyymmdd.mov
+                    
+        Deliverables/
+            video/
+            audio/
+            images/
 
 
 # Assets
