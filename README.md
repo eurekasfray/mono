@@ -2,9 +2,9 @@
 
 I have designed a workflow for when practicing animation. This is Mono. Mono sets rules and conventions to guide me along when I'm studying, practicing, and making animation. The workflow features a production-like pipeline which caters to the different stages of animation production &mdash; development, preproduction, shotproduction, preproduction, and distribution.
 
-I made Mono for various reasons. First, devising how to store the files weighed heavy on me each time I did an exercise. Second, inconsistencies arose between each exercise more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. What did I need? I needed a consistent workflow; I needed a pipeline.
+I made Mono for various reasons. First, devising a method for storing the files weighed heavily on me each time I performed an exercise. Second, inconsistencies arose between each exercise more and more. Production assets had varying &mdash; and often changing &mdash; names and hierarchical organizations. What was one thing during my last exercise was a another during the next exercise. I needed a consistent way to work. What I needed was a workflow. I needed a pipeline.
 
-<!-- ^ Feels like the paragraph above needs more -->
+[//]: # (Feels like the paragraph above needs more)
 
 This is a living document. It is updated when I need to make improvements to it. My intention is for Mono to evolve into something useful.
 
@@ -28,10 +28,8 @@ A production pipeline according to Urchin "can be considered to be an amalgam of
 
 The file-organization conventions follows some principles that allow it to be useful.
 
-<!--
-Note:
-* Each principle must be written in the following format: Principle {n}. {Title}. {Paragraph about 185-200 characters long}.
--->
+[//]: # (Note:)
+[//]: # (* Each principle must be written in the following format: Principle {n}. {Title}. {Paragraph about 185-200 characters long}.)
 
 * **Principle 1** - Originals and derivatives. Separate derived files from their originals. By keeping the original files in one place we can link derived files back to the originals. This means we can link source files to project files.
 
@@ -51,65 +49,68 @@ Note:
     /Exports                                                                        contains deliverables
     /ProjectFiles                                                                   contains project files
 
-    {ProjectName}
-        Assets
-            audio
-                music
-                    m01_Artist_Title.psd
+    {ProjectName}/
+        Assets/
+            audio/
+                music/
+                    m01_Artist_Title.mp3
                     m01_Artist_Title.txt
-                score
+                score/
                     s01_Composer_Title.wav
                     s01_Composer_Title.txt
-                voicerough
+                voicerough/
                     CharacterName_sc01_Blurb.wav
-                voicefinal
+                voicefinal/
                     CharacterName_sc01_Blurb.wav
-                sfxrough
+                sfxrough/
                     sc01_fr001_sh01sc05_Description.wav
-                sfxfinal
+                sfxfinal/
                     sc01_ff001_sh01sc05_Description.wav
-            readme
+                foleyrough/
+                foleyfinal/
+            readme/
                 Exercise.txt
                 Readme.txt
-            story
+            story/
                 Concept.txt
                 Script.txt
-            characters
-                Starlord
-                    reference
-                    model
-                    art
-            environments
-                Space
-                    reference
-                    model
-                    art
-            props
-                Laser
-                    references
-                    model
-                    art
-            storyboard
-                sb_p01_r1.png
-            titles
-                opening
-                    references
-                    art
-                intertitle
-                    references
-                    art
-                subtitle
-                    references
-                    art
-                closing
-                    references
-                    art
+            characters/
+                Starlord/
+                    reference/
+                    model/
+                    art/
+            environments/
+                Space/
+                    reference/
+                    model/
+                    art/
+            props/
+                Laser/
+                    references/
+                    model/
+                    art/
+            storyboard/
+                sb_pg01_r1.png
+            titles/
+                opening/
+                    references/
+                    art/
+                intertitle/
+                    references/
+                    art/
+                subtitle/
+                    references/
+                    art/
+                closing/
+                    references/
+                    art/
             animatic
+                a01_r01_yyyymmdd.prproj
                 a01_r01_yyyymmdd.mov
             layout
                 sc01_sh01,sh04.png ; A layout can be used for several scenes
                 sc01_sh05.png
-                sc01_sh06-sh10.png
+                sc01_sh06-sh10.png ; A layout can be used in a range of shots
             shot
                 bg
                     bg01_starshipLobbyStairWide.psd
@@ -123,10 +124,13 @@ Note:
                             rough
                                 rough_sc01_sh01_f0001.tiff
                                 ...
-                            cleanup
+                            tiedown
+                                tiedown_sc01_sh01_f0001.tiff
+                                ...
+                            line (cleanup)
                                 cleanup_sc01_sh01_f0001.tiff
                                 ...
-                            paintandink
+                            color
                                 paintandink_sc01_sh01_f0001.tiff
                                 ...
                             final
