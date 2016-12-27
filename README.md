@@ -35,7 +35,7 @@ The file-organization conventions follows some principles that allow it to be us
 
 * **Principle 2** - Storage. How do you handle the files: What's in a folder? What folder names you use? How you design the folder hierarchy.
 
-* **Principle 3** - Organization. This describes how files are grouped according to content, usage or value. 
+* **Principle 3** - Organization. This describes how files are grouped according to content, usage or value.
 
 * **Principle 4** - Flexibility. Offer enough of a framework for flexibility.
 
@@ -141,7 +141,7 @@ The file-organization conventions follows some principles that allow it to be us
             post/
                 edit/
                     edit.prproj
-                    
+
         Deliverables/
             video/
             audio/
@@ -199,7 +199,8 @@ TBD
 <!-- Let each paragraph have a consistent number of characters like say 400 -->
 
 * **`bg`** (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
-* **bg\\****`bg01_starshipLobbyStairWide.psd`** (*project file*): This is the project file for a background. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
+
+* **bg\\{bg01\_starshipLobbyStairWide.psd}** (*project file*): This is the project file for a background. Its filename goes like this: *bg[n]_[name].[projectExt]*. *n* is a numerical identifier for the background art. Totally up to you. This number help us identity and make unique each background. *name* is a name for the background.
 * **bg\\****`bg01_starshipLobbyStairWide.png`** (*exported file*): An exported background image. This file's name must be the same as the file from which it was exported. Its filename is written like this: *bg[n]_[name].[exportExt]*.
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes, which is composed of a series of shots. I've broken down each part into an orginization of folders.
