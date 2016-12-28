@@ -218,35 +218,35 @@ TBD
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes. Lastly, scene is composed of a series of shots. I've broken down each part into an organization of folders.
 
-**`sq01_chase`** (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *sq<n>_<name>*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
+**Sequence &mdash; `sq01_chase`** (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *sq<n>_<name>*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
 
-**`sq01_chase/sc01`** (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
+**Scene &mdash; `sq01_chase/sc01`** (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
 
-**`sq01_chase/sc01/sc01_dopesheet.psd`** (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number in its filename as *n*.
+**Dopesheet &mdash; `sq01_chase/sc01/sc01_dopesheet.psd`** (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number in its filename as *n*.
 
-**`sq01_chase/sc01/sc01_sh01`** (*folder*): This is a shot folder. We name a shot folder like this: *sc[m]_sh[n]_[name]*. A shot folder takes the sequence mnemonic *sc* and inherits the scene number as *m* in to keep scene and shot together. Then, the shot folder is given the mnemonic *sh* and must have a shot number *n*.
+**Shot &mdash; `sq01_chase/sc01/sc01_sh01`** (*folder*): This is a shot folder. We name a shot folder like this: *sc[m]_sh[n]_[name]*. A shot folder takes the sequence mnemonic *sc* and inherits the scene number as *m* in to keep scene and shot together. Then, the shot folder is given the mnemonic *sh* and must have a shot number *n*.
 
-**`sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint`** (*project file*): A shot animation project file. Animation work is done in this project file. It inherits the scene number and the shot number. We name this file like this: *sc[n]_sh[n].[projectExt]*.
+**Shot animation project file &mdash; `sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint`** (*project file*): A shot animation project file. Animation work is done in this project file. It inherits the scene number and the shot number. We name this file like this: *sc[n]_sh[n].[projectExt]*.
 
-**`sq01_chase/sc01/sc01_sh01/rough`** (*folder*): This folder stores the rough animation frames for the shot.
+**Roughs &mdash; `sq01_chase/sc01/sc01_sh01/rough`** (*folder*): This folder stores the rough animation frames for the shot.
 
-**`sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff`** (*exported file*): This is a frame for the roughs of the shot. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
+**Rough frame image file &mdash; `sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff`** (*exported file*): This is a frame for the roughs of the shot. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
 
-**`sq01_chase/sc01/sc01_sh01/tiedown`** (*folder*): TBD
+**Tiedowns &mdash; `sq01_chase/sc01/sc01_sh01/tiedown`** (*folder*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff`** (*exported file*): TBD
+**Tiedown frame file &mdash; `sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff`** (*exported file*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/cleanup`** (*folder*): TBD
+**Cleanup &mdash; `sq01_chase/sc01/sc01_sh01/cleanup`** (*folder*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/cleanup/cleanup_sc01_sh01_f0001.tiff`** (*exported file*): TBD
+**Cleanup frame file &mdash; `sq01_chase/sc01/sc01_sh01/cleanup/cleanup_sc01_sh01_f0001.tiff`** (*exported file*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/line+color`** (*folder*): TBD
+**Line+color &mdash; `sq01_chase/sc01/sc01_sh01/line+color`** (*folder*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff`** (*exported file*): TBD
+**Line+color frame file &mdash; `sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff`** (*exported file*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/final`** (*folder*): TBD
+**Final &mdash; `sq01_chase/sc01/sc01_sh01/final`** (*folder*): TBD
 
-**`sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff`** (*exported file*): TBD
+**Final frame file &mdash; `sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff`** (*exported file*): TBD
 
 
 # Deliverables
