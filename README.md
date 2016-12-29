@@ -44,6 +44,7 @@ The file-organization conventions follows some principles that allow it to be us
 
 # Conventions
 
+* The filenames in this workflow all have the same general naming scheme. That is, each filename stores information. Each piece of information is separated by the underscore character. The most important information should appear first, followed by the least important. The goal of the filename is to provide as much information as necessary to the viewer. The naming scheme goes like this: *[information]_[information]_[information]_[...].[extension]*. For example, a *shot project file* has this naming scheme: *[sceneNumber]_[shotNumber]_[shotName].[extension].
 * *n* may padded with zeroes (e.g. 001) or it may not (e.g. 1).
 * *name* is written in lowerCamelCase.
 * *title* is written in UpperCamelCase.
@@ -210,27 +211,27 @@ TBD
 
 **Background:** `shot/bg` (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
 
-**Background project file:** `shot/bg/bg01_starshipLobbyStairWide.psd` (*project file*): This is a project file for a background. The name of a background-art file follows this convention: *bg[n]_[name].[projectExt]*. Background-art files always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identity and make unique each background.  How you number your backgrounds is totally up to you. You may fill a number with zeroes; for example: a background numbered `1` will be named `bg01...`. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. Other descriptive names are desertOasisAerial, desertDuneHorizon, hotelRoom301Window,
+**Background project file:** `shot/bg/bg01_starshipLobbyStairWide.psd` (*project file*): This is a project file for a background &middot; The naming scheme for a background-art file follows this convention: *bg[n]_[name].[projectExt]*. The filename always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identify and make unique each background. You should pad the number with zeroes. For example, a background numbered `1` should be named `bg01`. Fill with as many zeroes as needed. If there are a total of 100 backgrounds and you count from 0 and not 1, then the numbering begins at `000` to `001` to `009` to `010` to `090` to `100`. You see the pattern. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. Other descriptive names are desertOasisAerial, desertDuneHorizon, hotelRoom301Window,
 
-**Background export file:** `bg/bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. The name of this must be the same as the file from which it was exported. Its filename is written like this: *<project_file_name>.[exportExt]*.
+**Background export file:** `bg/bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. This file is the exported representation of the *background project file*. The name of this must be the same as the file from which it was exported. Its filename is written like this: *<project_file_name>.[exportExt]*.
 
 ### Sequence, Scenes, and Shots
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes. Lastly, scene is composed of a series of shots. I've broken down each part into an organization of folders.
 
-**Sequence:** `sq01_chase` (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *sq<n>_<name>*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
+**Sequence:** `sq01_chase` (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *[sequenceNumber]_[sequenceName]*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
 
 **Scene:** `sq01_chase/sc01` (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
 
-**Dopesheet:** `sq01_chase/sc01/sc01_dopesheet.psd` (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number in its filename as *n*.
+**Dopesheet:** `sq01_chase/sc01/sc01_dopesheet.psd` (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number from its parent to its filename as *n*.
 
 **Shot:** `sq01_chase/sc01/sc01_sh01` (*folder*): This is a shot folder. We name a shot folder like this: *sc[m]_sh[n]_[name]*. A shot folder takes the sequence mnemonic *sc* and inherits the scene number as *m* in to keep scene and shot together. Then, the shot folder is given the mnemonic *sh* and must have a shot number *n*.
 
-**Shot animation project file:** `sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint` (*project file*): A shot animation project file. Animation work is done in this project file. It inherits the scene number and the shot number. We name this file like this: *sc[n]_sh[n].[projectExt]*.
+**Shot project file:** `sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint` (*project file*): A shot animation project file. Animation work is done in this project file. It inherits the scene number and the shot number. We name this file like this: *sc[n]_sh[n].[projectExt]*.
 
-**Roughs:** `sq01_chase/sc01/sc01_sh01/rough` (*folder*): This folder stores the rough animation frames for the shot.
+**Roughs:** `sq01_chase/sc01/sc01_sh01/rough` (*folder*): The purpose of this folder is to store frames of the shot's rough animation.
 
-**Rough frame image file:** `sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff` (*exported file*): This is a frame for the roughs of the shot. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
+**Rough frame image file:** `sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff` (*exported file*): This is a frame of the shot's rough animation. This file would typically be exported from the *shot project file*. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
 
 **Tiedowns:** `sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): TBD
 
