@@ -41,11 +41,13 @@ The file-organization conventions follows some principles that allow it to be us
 
 * **Principle 5** - DRY (Don't repeat yourself). This applies to directory names. Do not use file organization that requires for you to have two or layouts that repeat each other.
 
+* **Principle 6** - Cohesive. This applies to Principle 3. The organization of files and folders shall be cohesive; meaning, files are grouped according to their content, usage, and value. Files that are closely related to each other in content, usage, and value are grouped together.
+
 
 # Conventions
 
 * The filenames in this workflow all have the same general naming scheme. That is, each filename stores information. Each piece of information is separated by the underscore character. The most important information should appear first, followed by the least important. The goal of the filename is to provide as much information as necessary to the viewer. The naming scheme goes like this: *[information]_[information]_[information]_[...].[extension]*. For example, a *shot project file* has this naming scheme: *[sceneNumber]_[shotNumber]_[shotName].[extension].
-* *n* may padded with zeroes (e.g. 001) or it may not (e.g. 1).
+* *n* may be padded with zeroes (e.g. 001) or it may not (e.g. 1).
 * *name* is written in lowerCamelCase.
 * *title* is written in UpperCamelCase.
 * *yyyymmdd* represents a date where *yyyy* is the year, *mm* is the month, and *dd* is the day of the month. For example, the date 20170228 means the 28th of February, 2017.
@@ -62,7 +64,7 @@ The file-organization conventions follows some principles that allow it to be us
         Assets/
             audio/
                 music/
-                    music_Artist_Title.mp3
+                    music_Artist_Title.wav
                     music_Artist_Title.txt
                 score/
                     score_Composer_Title.wav
@@ -87,34 +89,42 @@ The file-organization conventions follows some principles that allow it to be us
                 Script.txt
             characters/
                 Starlord/
-                    reference/
+                    references/
+                    design/
                     model/
                     art/
             environments/
                 Space/
-                    reference/
+                    references/
+                    design/
                     model/
                     art/
             props/
                 Laser/
                     references/
+                    design/
                     model/
                     art/
             storyboard/
+                sb_pg01_r1.psd
                 sb_pg01_r1.png
             titles/
                 opening/
                     references/
-                    art/
+                    design/
+                    final/
                 intertitle/
                     references/
-                    art/
+                    design/
+                    final/
                 subtitle/
                     references/
-                    art/
+                    design/
+                    final/
                 closing/
                     references/
-                    art/
+                    design/
+                    final/
             animatic/
                 a01_r01_yyyymmdd.prproj
                 a01_r01_yyyymmdd.mov
@@ -122,39 +132,56 @@ The file-organization conventions follows some principles that allow it to be us
                 sc01_sh01,sh04.png ; A layout can be used for several scenes
                 sc01_sh05.png
                 sc01_sh06-sh10.png ; A layout can be used in a range of shots
-            shot/
-                bg/
-                    bg01_starshipLobbyStairWide.psd
-                    bg01_starshipLobbyStairWide.png
-                    ...
-                sq01_chase/
-                    sc01/
-                        sc01_dopesheet.psd
-                        sc01_sh1/
-                            sc01_sh01.tvp
-                            rough/
-                                rough_sc01_sh01_f0001.tiff
-                                ...
-                            tiedown/
-                                tiedown_sc01_sh01_f0001.tiff
-                                ...
-                            cleanup/
-                                cleanup_sc01_sh01_f0001.tiff
-                                ...
-                            line+color/
-                                lineandcolor_sc01_sh01_f0001.tiff
-                                ...
-                            final/
-                                final_sc01_sh01_f0001.tiff
-                                ...
-            post/
-                edit/
-                    edit.prproj
+        Shot/
+            bg/
+                bg01_starshipLobbyStairWide.psd
+                bg01_starshipLobbyStairWide.png
+                ...
+            sq01_openingTitle/
+                ...
+            sq02_chase/
+                sc01/
+                    sc01_dopesheet.psd
+                    sc01_sh1/
+                        sc01_sh01.tvp
+                        rough/
+                            rough_sc01_sh01_f0001.tiff
+                            ...
+                        tiedown/
+                            tiedown_sc01_sh01_f0001.tiff
+                            ...
+                        cleanup/
+                            cleanup_sc01_sh01_f0001.tiff
+                            ...
+                        line+color/
+                            lineandcolor_sc01_sh01_f0001.tiff
+                            ...
+                        final/
+                            final_sc01_sh01_f0001.tiff
+                            ...
+        Post/
+            edit/
+                edit.prproj
 
         Deliverables/
             video/
+
             audio/
             images/
+
+        Branding/
+            poster/
+                references/
+                design/
+                final/
+            cover/
+                references/
+                    coverr01_
+                design/
+                    coverd01_panel1.psd
+                final/
+                    coverf01_panel1_r1.psd
+                    coverf01_panel1_r1.png
 
 
 # Assets
@@ -187,6 +214,16 @@ TBD
 
     Assets\titles
 
+**Titles:** `titles` (*folder*): Store all titles in this folder. The following types of titles are stored here:
+
+**Opening titles:** `titles/opening` (*folder*):
+
+**Intertitles:** `titles/intertitles` (*folder*): …
+
+**Subtitles:** `titles/subtitles` (*folder*): …
+
+**Closing title:** `titles/closing` (*folder*): …
+
 ## Storyboard
 
     Assets\storyboard
@@ -199,11 +236,11 @@ TBD
 
     Assets\layout
 
-## Shot
+# Shot
 
-    Assets\shot
+    Shot
 
-**Shot:** `shot` (*folder*): This is the shot folder. 'Shot' is short for 'shot-production'. Shot-production is the process of animating and bringing the story and characters to life. All the film's shots are animated at this stage. Shot-production begins once development and preproduction are completed. The purpose of this folder is to store and organize all things related to shot-production. The shot folder is so forth organized by the following conventions:
+**Shot:** `Shot` (*folder*): This is the shot folder. 'Shot' is short for 'shot-production'. Shot-production is the process of animating and bringing the story and characters to life. All the film's shots are animated at this stage. Shot-production begins once development and preproduction are completed. The purpose of this folder is to store and organize all things related to shot-production. The shot folder is so forth organized by the following conventions:
 
 [//]: # (Let each paragraph have a consistent number of characters like say 400)
 
@@ -211,51 +248,52 @@ TBD
 
 **Background:** `shot/bg` (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
 
-**Background project file:** `shot/bg/bg01_starshipLobbyStairWide.psd` (*project file*): This is a project file for a background &middot; The naming scheme for a background-art file follows this convention: *bg[n]_[name].[projectExt]*. The filename always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identify and make unique each background. You should pad the number with zeroes. For example, a background numbered `1` should be named `bg01`. Fill with as many zeroes as needed. If there are a total of 100 backgrounds and you count from 0 and not 1, then the numbering begins at `000` to `001` to `009` to `010` to `090` to `100`. You see the pattern. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. Other descriptive names are desertOasisAerial, desertDuneHorizon, hotelRoom301Window,
+**Background project file:** `shot/bg/bg01_starshipLobbyStairWide.psd` (*project fil*): This is a project file for a background &middot; The naming scheme for a background project file follows this rule: *bg[n]_[name].[projectExt]*. The filename always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identify and make unique each background. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. *projectExt* is the file extension of the project file.
 
-**Background export file:** `bg/bg01_starshipLobbyStairWide.png` (*exported file*): An exported background image. This file is the exported representation of the *background project file*. The name of this must be the same as the file from which it was exported. Its filename is written like this: *<project_file_name>.[exportExt]*.
+**Background export file:** `bg/bg01_starshipLobbyStairWide.png` (*exported file*): This is an exported background image. This file is the exported representation of the *background project file* &middot; The background export file inherits its name from the *background project file*. For instance, if the name of the project file is `bg03_desertHorizon.tvp`, then the name of the *background export file* is `bg03_desertHorizon.png`.
 
 ### Sequence, Scenes, and Shots
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes. Lastly, scene is composed of a series of shots. I've broken down each part into an organization of folders.
 
-**Sequence:** `sq01_chase` (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *[sequenceNumber]_[sequenceName]*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
+**Sequence:** `Shot/sq01_chase` (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *sq[n]_[name]*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
 
-**Scene:** `sq01_chase/sc01` (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
+**Scene:** `Shot/sq01_chase/sc01` (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
 
-**Dopesheet:** `sq01_chase/sc01/sc01_dopesheet.psd` (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number from its parent to its filename as *n*.
+**Dopesheet:** `Shot/sq01_chase/sc01/sc01_dopesheet.psd` (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number from its parent to its filename as *n*.
 
-**Shot:** `sq01_chase/sc01/sc01_sh01` (*folder*): This is a shot folder. We name a shot folder like this: *sc[m]_sh[n]_[name]*. A shot folder takes the sequence mnemonic *sc* and inherits the scene number as *m* in to keep scene and shot together. Then, the shot folder is given the mnemonic *sh* and must have a shot number *n*.
+**Shot:** `Shot/sq01_chase/sc01/sc01_sh01` (*folder*): This is a shot folder. The purpose of this folder is to store the shot's project file and exported frames. You can create as many shot folders as there are shots in your film &middot; The shot folder uses this naming scheme: *sc[m]_sh[n]_[name]*. A shot folder takes the scene mnemonic *sc*, and inherits the scene number from its parent scene as *m*. Then, the shot folder is given the mnemonic *sh* (short for 'shot') and a shot number *n*. We keep the scene number with the shot because a shot belongs to a scene.
 
-**Shot project file:** `sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint` (*project file*): A shot animation project file. Animation work is done in this project file. It inherits the scene number and the shot number. We name this file like this: *sc[n]_sh[n].[projectExt]*.
+**Shot project file:** `Shot/sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint` (*project file*): This is the shot's animation project file. The animation work is done in this project file. We name this file like this: *sc[n]_sh[n].[projectExt]*. It inherits the scene number and the shot number.
 
-**Roughs:** `sq01_chase/sc01/sc01_sh01/rough` (*folder*): The purpose of this folder is to store frames of the shot's rough animation.
+**Roughs:** `Shot/sq01_chase/sc01/sc01_sh01/rough` (*folder*): The purpose of this folder is to store frames of the shot's rough animation.
 
-**Rough frame image file:** `sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff` (*exported file*): This is a frame of the shot's rough animation. This file would typically be exported from the *shot project file*. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
+**Rough frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff` (*exported file*): This is a frame of the shot's rough animation. This file would typically be exported from the *shot project file*. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
 
-**Tiedowns:** `sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): TBD
+**Tiedowns:** `Shot/sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): TBD
 
-**Tiedown frame image file:** `sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Tiedown frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff` (*exported file*): TBD
 
-**Cleanup:** `sq01_chase/sc01/sc01_sh01/cleanup` (*folder*): TBD
+**Cleanup:** `Shot/sq01_chase/sc01/sc01_sh01/cleanup` (*folder*): TBD
 
-**Cleanup frame image file:** `sq01_chase/sc01/sc01_sh01/cleanup/cleanup_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Cleanup frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/cleanup/cleanup_sc01_sh01_f0001.tiff` (*exported file*): TBD
 
-**Line+color:** `sq01_chase/sc01/sc01_sh01/line+color` (*folder*): TBD
+**Line+color:** `Shot/sq01_chase/sc01/sc01_sh01/line+color` (*folder*): TBD
 
-**Line+color frame image file** `sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Line+color frame image file** `Shot/sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff` (*exported file*): TBD
 
-**Final** `sq01_chase/sc01/sc01_sh01/final` (*folder*): TBD
+**Final** `Shot/sq01_chase/sc01/sc01_sh01/final` (*folder*): TBD
 
-**Final frame image file** `sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Final frame image file** `Shot/sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff` (*exported file*): TBD
 
 
 # Deliverables
 
 **Storage & organization**
 
+# Workflow/Pipeline
 
-
+# Software
 
 # Reading
 
