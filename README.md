@@ -44,7 +44,7 @@ The file-organization conventions follows some principles that allow it to be us
 * **Principle 6** - Cohesive. This applies to Principle 3. The organization of files and folders shall be cohesive; meaning, files are grouped according to their content, usage, and value. Files that are closely related to each other in content, usage, and value are grouped together.
 
 
-# Conventions
+# Naming conventions
 
 * The filenames in this workflow all have the same general naming scheme. That is, each filename stores information. Each piece of information is separated by the underscore character. The most important information should appear first, followed by the least important. The goal of the filename is to provide as much information as necessary to the viewer. The naming scheme goes like this: *[information]_[information]_[information]_[...].[extension]*. For example, a *shot project file* has this naming scheme: *[sceneNumber]_[shotNumber]_[shotName].[extension].
 * *n* may be padded with zeroes (e.g. 001) or it may not (e.g. 1).
@@ -52,6 +52,9 @@ The file-organization conventions follows some principles that allow it to be us
 * *title* is written in UpperCamelCase.
 * *yyyymmdd* represents a date where *yyyy* is the year, *mm* is the month, and *dd* is the day of the month. For example, the date 20170228 means the 28th of February, 2017.
 
+[//]: # (### Information)
+[//]: # (### Prefixes)
+[//]: # (### Separators)
 
 # Directory layout
 
@@ -186,59 +189,61 @@ The file-organization conventions follows some principles that allow it to be us
 
 # Assets
 
-**Storage & organization**
-
-TBD
+**Assets:** `Assets` (*folder*): This is the assets folder, also known as the 'Source' folder. It is called the 'Assets' folder because it contains all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation.
 
 ## Story
 
-    Assets\story
+**Story:** `Assets\story` (*folder*): TBD
 
 ## Audio
 
-    Assets\audio
+**Audio:** `Assets\audio` (*folder*): TBD
 
 ## Characters
 
-    Assets\characters
+**Characters:** `Assets\characters` (*folder*): TBD
 
 ## Environments
 
-    Assets\environments
+**Environments:** `Assets\environments` (*folder*): TBD
 
 ## Props
 
-    Assets\props
+**Props:** `Assets\props` (*folder*): TBD
 
 ## Titles
 
-    Assets\titles
+**Titles:** `Assets/titles` (*folder*): Store all titles in this folder. The following types of titles are stored here:
 
-**Titles:** `titles` (*folder*): Store all titles in this folder. The following types of titles are stored here:
+### Opening titles
 
-**Opening titles:** `titles/opening` (*folder*):
+**Opening titles:** `Assets/titles/opening` (*folder*):
 
-**Intertitles:** `titles/intertitles` (*folder*): …
+### Intertitles
 
-**Subtitles:** `titles/subtitles` (*folder*): …
+**Intertitles:** `Assets/titles/intertitles` (*folder*): …
 
-**Closing title:** `titles/closing` (*folder*): …
+### Subtitles
+
+**Subtitles:** `Assets/titles/subtitles` (*folder*): …
+
+### Closing titles
+
+**Closing title:** `Assets/titles/closing` (*folder*): …
 
 ## Storyboard
 
-    Assets\storyboard
+**Storyboard:** `Assets\storyboard` (*folder*): TBD
 
 ## Animatic
 
-    Assets\animatic
+**Animatic**: `Assets/animatic` (*folder*): TBD
 
 ## Layout
 
-    Assets\layout
+**Layout:** `Assets/layout` (*folder*): TBD
 
 # Shot
-
-    Shot
 
 **Shot:** `Shot` (*folder*): This is the shot folder. 'Shot' is short for 'shot-production'. Shot-production is the process of animating and bringing the story and characters to life. All the film's shots are animated at this stage. Shot-production begins once development and preproduction are completed. The purpose of this folder is to store and organize all things related to shot-production. The shot folder is so forth organized by the following conventions:
 
@@ -246,11 +251,11 @@ TBD
 
 ### Background
 
-**Background:** `shot/bg` (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
+**Background:** `Shot/bg` (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
 
-**Background project file:** `shot/bg/bg01_starshipLobbyStairWide.psd` (*project fil*): This is a project file for a background &middot; The naming scheme for a background project file follows this rule: *bg[n]_[name].[projectExt]*. The filename always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identify and make unique each background. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. *projectExt* is the file extension of the project file.
+**Background project file:** `Shot/bg/bg01_starshipLobbyStairWide.psd` (*project file*): This is a project file for a background &middot; The naming scheme for a background project file follows this rule: *bg[n]_[name].[projectExt]*. The filename always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identify and make unique each background. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. *projectExt* is the file extension of the project file.
 
-**Background export file:** `bg/bg01_starshipLobbyStairWide.png` (*exported file*): This is an exported background image. This file is the exported representation of the *background project file* &middot; The background export file inherits its name from the *background project file*. For instance, if the name of the project file is `bg03_desertHorizon.tvp`, then the name of the *background export file* is `bg03_desertHorizon.png`.
+**Background export file:** `Shot/bg/bg01_starshipLobbyStairWide.png` (*exported file*): This is an exported background image. This file is the exported representation of the *background project file* &middot; The background export file inherits its name from the *background project file*. For instance, if the name of the project file is `bg03_desertHorizon.tvp`, then the name of the *background export file* is `bg03_desertHorizon.png`.
 
 ### Sequence, Scenes, and Shots
 
