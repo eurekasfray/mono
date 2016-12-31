@@ -116,6 +116,7 @@ The file-organization conventions follows some principles that allow it to be us
                     references/
                     design/
                     final/
+
                 intertitle/
                     references/
                     design/
@@ -189,11 +190,15 @@ The file-organization conventions follows some principles that allow it to be us
 
 # Assets
 
-**Assets:** `Assets` (*folder*): This is the assets folder, also known as the 'Source' folder. It is called the 'Assets' folder because it contains all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation.
+**Assets:** `Assets` (*folder*): This is the assets folder, also known as the source folder. It is called the 'Assets' folder because it contains all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation.
 
 ## Story
 
-**Story:** `Assets\story` (*folder*): TBD
+**Story:** `Assets\story` (*folder*): This is the story folder. Put all writings related to story in this folder.
+
+**Story concept:** `Assets\story\concept.txt` (*rocument*): This is the story concept. Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
+
+**Story script:** `Assets\story\script.txt` (*text file*): This is the script.
 
 ## Audio
 
@@ -221,15 +226,15 @@ The file-organization conventions follows some principles that allow it to be us
 
 ### Intertitles
 
-**Intertitles:** `Assets/titles/intertitles` (*folder*): …
+**Intertitles:** `Assets/titles/intertitles` (*folder*): TBD
 
 ### Subtitles
 
-**Subtitles:** `Assets/titles/subtitles` (*folder*): …
+**Subtitles:** `Assets/titles/subtitles` (*folder*): TBD
 
 ### Closing titles
 
-**Closing title:** `Assets/titles/closing` (*folder*): …
+**Closing title:** `Assets/titles/closing` (*folder*): TBD
 
 ## Storyboard
 
@@ -271,25 +276,29 @@ A film can be broken down into sequences, scenes, and shots. A film is a series 
 
 **Shot project file:** `Shot/sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint` (*project file*): This is the shot's animation project file. The animation work is done in this project file. We name this file like this: *sc[n]_sh[n].[projectExt]*. It inherits the scene number and the shot number.
 
+### Roughs, tiedowns, cleanup, and line & color
+
+The animator passes over a shot or scene several times to complete the animation. These passes are called the roughs, tiedowns, cleanup, and line & color.
+
 **Roughs:** `Shot/sq01_chase/sc01/sc01_sh01/rough` (*folder*): The purpose of this folder is to store frames of the shot's rough animation.
 
 **Rough frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff` (*exported file*): This is a frame of the shot's rough animation. This file would typically be exported from the *shot project file*. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
 
-**Tiedowns:** `Shot/sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): TBD
+**Tiedowns:** `Shot/sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): See **Roughs**.
 
-**Tiedown frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Tiedown frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
-**Cleanup:** `Shot/sq01_chase/sc01/sc01_sh01/cleanup` (*folder*): TBD
+**Cleanup:** `Shot/sq01_chase/sc01/sc01_sh01/cleanup` (*folder*): See **Roughs**.
 
-**Cleanup frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/cleanup/cleanup_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Cleanup frame image file:** `Shot/sq01_chase/sc01/sc01_sh01/cleanup/cleanup_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
-**Line+color:** `Shot/sq01_chase/sc01/sc01_sh01/line+color` (*folder*): TBD
+**Line+color:** `Shot/sq01_chase/sc01/sc01_sh01/line+color` (*folder*): See **Roughs**.
 
-**Line+color frame image file** `Shot/sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Line+color frame image file** `Shot/sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
-**Final** `Shot/sq01_chase/sc01/sc01_sh01/final` (*folder*): TBD
+**Final** `Shot/sq01_chase/sc01/sc01_sh01/final` (*folder*): See **Roughs**.
 
-**Final frame image file** `Shot/sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff` (*exported file*): TBD
+**Final frame image file** `Shot/sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
 
 # Deliverables
