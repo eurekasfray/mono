@@ -222,7 +222,7 @@ DwarfStarWars/
 
 **Concept:** `~/Assets/story/concept.txt` (*document file*): This is the story concept. You Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
 
-**Script:** `~/Assets/story/script.txt` (*document file*): This is the script.
+**Script:** `~/Assets/story/`**`script.txt`** (*document file*): This is the script.
 
 ## Audio
 
