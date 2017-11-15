@@ -14,12 +14,18 @@ var setContent = function(selector) {
                 var markdown = atob(data.content);
                 console.log(markdown);
                 var html = markdownify(markdown, selector);
-                console.log(html);
-                console.log(selector);
+                if (html !== false) {
+                    console.log(html);
+                    console.log(selector);
+                }
+                else {
+                    displayContent("Unable to convert data to Markdown.");
+                }
             },
             error: function() {
-                console.log("An error has occurred while pulling data.");
-                $(selector).html("An error has occurred while pulling data.");
+                var msg = "An error has occurred while pulling data.";
+                console.log(msg);
+                displayContent(msg);
             },
             complete: function(xhr, status) {
                 console.log(status);
@@ -27,6 +33,14 @@ var setContent = function(selector) {
         }
     );
 };
+
+var displayContent = function (selector, content)
+{
+    $(selector)
+    .hide()
+    .fadeIn(125)
+    .html(content);
+}
 
 var markdownify = function(markdown, selector) {
     $.ajax(
@@ -43,7 +57,7 @@ var markdownify = function(markdown, selector) {
             }),
             success: function(data) {
                 console.log(data);
-                $(selector).html(data);
+                displayContent(selector, data);
                 return data;
             },
             error: function() {

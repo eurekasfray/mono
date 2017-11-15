@@ -10,69 +10,76 @@ body {
     margin-right: auto;
 }
 
-p, ul {
+.title {
+    text-align: center;
+}
+
+/**
+ * Markdown style
+ */
+.markdown p, ul {
     color: #505050;
     margin-bottom: 1em;
 }
 
-b, strong {
+.markdown b, strong {
     color: black;
 }
 
-i, em {
+.markdown i, em {
     color: #A1A1A1;
     color: #ADBDCC;
     font-weight: bold;
 }
 
-code, pre {
+.markdown code, pre {
     font-family: "Roboto Mono", monospace;
     font-size: calc(1em - .05em);
 }
 
-code {
+.markdown code {
     color: #4D8ABF;
 }
 
-pre {
+.markdown pre {
     background-color: rgba(0,0,0,.05);
     overflow-x: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.markdown h1, h2, h3, h4, h5, h6 {
 }
 
-h1 {
+.markdown h1 {
     margin-top: 3em;
 }
 
-h2 {
+.markdown h2 {
 }
 
-h3 {
+.markdown h3 {
     text-transform: uppercase;
     font-size: 1.1em;
     letter-spacing: 1px;
     margin-bottom: .5em;
 }
 
-h4 {
+.markdown h4 {
 
 }
 
-h5 {
+.markdown h5 {
 
 }
 
-h6 {
+.markdown h6 {
 
 }
 
-blockquote {
+.markdown blockquote {
     background-color: rgba(0,0,0,.05);
     margin-left: 0;
 }
 
-code {
+.markdown code {
 
 }
