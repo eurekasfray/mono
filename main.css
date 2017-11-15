@@ -1,7 +1,7 @@
 body {
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
-    line-height: 145%;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 .container {
@@ -10,30 +10,69 @@ body {
     margin-right: auto;
 }
 
-.p {
+p, ul {
+    color: #505050;
     margin-bottom: 1em;
 }
 
-.h1 {
+b, strong {
+    color: black;
+}
+
+i, em {
+    color: #A1A1A1;
+    color: #ADBDCC;
+    font-weight: bold;
+}
+
+code, pre {
+    font-family: "Roboto Mono", monospace;
+    font-size: calc(1em - .05em);
+}
+
+code {
+    color: #4D8ABF;
+}
+
+pre {
+    background-color: rgba(0,0,0,.05);
+    overflow-x: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+h1 {
+    margin-top: 3em;
+}
+
+h2 {
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    margin-bottom: .5em;
+}
+
+h4 {
 
 }
 
-.h2 {
+h5 {
 
 }
 
-.h3 {
+h6 {
 
 }
 
-.h4 {
-
+blockquote {
+    background-color: rgba(0,0,0,.05);
+    margin-left: 0;
 }
 
-.h5 {
-
-}
-
-.h6 {
+code {
 
 }
