@@ -50,6 +50,11 @@ The file-organization conventions follows some principles that allow it to be us
 * **Principle 6** - Cohesive. This applies to Principle 3. The organization of files and folders shall be cohesive; meaning, files are grouped according to their content, usage, and value. Files that are closely related to each other in content, usage, and value are grouped together.
 
 
+
+# Breakable rules
+
+The workflow is made to give a guide on how to get things done, but does not enforce them. We are free to break use dfifferent names, as long as we keep the naming schemes.
+
 # Naming conventions
 
 All files have the same general naming scheme. Each file name stores information. File names carry semantic information about a file &mdash; what it is, what it contains, what it is for. The goal of the filename is to provide as much information as necessary to to you.
@@ -209,28 +214,15 @@ DwarfStarWars/
 
 # Assets
 
-`DwarfStarWars/Assets/` (*root folder*): This is the assets folder, also known as the source folder. It is called the 'Assets' folder because it used to store all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation. Put them all in once pace.
-
-```
-DwarfStarWars/
-    Assets/
-```
+`DwarfStarWars/Assets/` (*root folder*): This is the assets folder, also known as the source folder. It is called the 'Assets' folder because it used to store all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation. Its purpose is to keep all ingredients in one easy-to-find place.
 
 ## Story
 
 `~/Assets/story/` (*folder*): This is the story folder. Put all writings related to story in this folder.
 
-**Story concept:** `~/Assets/story/concept.txt` (*document*): This is the story concept. Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
+**Concept:** `~/Assets/story/concept.txt` (*document file*): This is the story concept. You Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
 
-**Story script:** `~/Assets/story/script.txt` (*text file*): This is the script.
-
-```
-DwarfStarWars/
-    Assets/
-        story/
-            concept.txt
-            script.txt
-```
+**Script:** `~/Assets/story/script.txt` (*document file*): This is the script.
 
 ## Audio
 
