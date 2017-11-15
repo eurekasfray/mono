@@ -220,9 +220,13 @@ DwarfStarWars/
 
 `~/Assets/story/` (*folder*): This is the story folder. Put all writings related to story in this folder.
 
-**Concept:** `~/Assets/story/concept.txt` (*document file*): This is the story concept. You Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
+### Concept
 
-**Script:** `~/Assets/story/`**`script.txt`** (*document file*): This is the script.
+`~/Assets/story/concept.txt` (*document file*): This is the story concept. You Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
+
+### Script
+
+`~/Assets/story/`**`script.txt`** (*document file*): This is the script.
 
 ## Audio
 
@@ -294,16 +298,16 @@ DwarfStarWars/
 
 [//]: # (Let each paragraph have a consistent number of characters like say 400)
 
-### Background
+## Background
 
-**Background:** `~/Shot/bg` (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
+`~/Shot/bg` (*folder*): This folder stores background art. Background art lives at the same heirarchical level as the *sequence*, *scene*, and *shot* folders. This makes us happy, because a single background art can be used in multiple shots. That means, background files can be referenced to since they remain in a fixed location. Different shots can reference a single background, as opposed to having the same background file copied to different shot folders.
 
 **Background project file:** `~/Shot/bg/bg01_starshipLobbyStairWide.psd` (*project file*): This is a project file for a background &middot; The naming scheme for a background project file follows this rule: *bg[n]_[name].[projectExt]*. The filename always begin with the mnemonic *bg*. *n* is a numerical identifier for the background art. This number help us identify and make unique each background. *name* is a name for the background. The name of a background should be descriptive. In `bg01_starshipLobbyStairWide` for example the name gives you an idea of where you are. *projectExt* is the file extension of the project file.
 
 **Background export file:** `~/Shot/bg/bg01_starshipLobbyStairWide.png` (*exported file*): This is an exported background image. This file is the exported representation of the *background project file* &middot; Inherit the name of the export file from the *background project file*. For instance, if the name of the project file is `bg03_desertHorizon.tvp`, then the name of the *background export
  file* is `bg03_desertHorizon.png`.
 
-### Sequence, Scenes, and Shots
+## Sequence, Scenes, and Shots
 
 A film can be broken down into sequences, scenes, and shots. A film is a series of sequences. Each sequence is made of up of a series of scenes. Lastly, scene is composed of a series of shots. I've broken down each part into an organization of folders.
 
@@ -311,15 +315,15 @@ A film can be broken down into sequences, scenes, and shots. A film is a series 
 
 **Sequence:** `~/Shot/sq01_chase` (*folder*): This is a sequence. This folder stores the scenes that help make up the sequence. We write a sequence like this: *sq[n]_[name]*. A sequence is given the mnemonic *sq* (SeQuence). A sequence must have a number *n*, and can be given a *name*. The name of our sequence is 'chase'. It stands for a spaceship chase sequence.
 
-## Scenes
+### Scene
 
-**Scene:** `~/Shot/sq01_chase/sc01` (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
+`~/Shot/sq01_chase/sc01` (*folder*): This is a scene. This folder stores the shots that make up a schene. We write a scene like this: *sc[n]_[name]*. A scene is given the mnemonic *sc*. A scene must have a number *n*, and can be given a *name*.
 
 **Dopesheet:** `~/Shot/sq01_chase/sc01/sc01_dopesheet.psd` (*project file*): The dope or exposure sheet. The dope sheet is named like this: *sc[n]_dopesheet.[projectExt]*. This file inherits the scene number from its parent to its filename as *n*.
 
-## Shots
+### Shot
 
-**Shot:** `~/Shot/sq01_chase/sc01/sc01_sh01` (*folder*): This is a shot folder. The purpose of this folder is to store the shot's project file and exported frames. You can create as many shot folders as there are shots in your film &middot; The shot folder uses this naming scheme: *sc[m]_sh[n]_[name]*. A shot folder takes the scene mnemonic *sc*, and inherits the scene number from its parent scene as *m*. Then, the shot folder is given the mnemonic *sh* (short for 'shot') and a shot number *n*. We keep the scene number with the shot because a shot belongs to a scene.
+`~/Shot/sq01_chase/sc01/sc01_sh01` (*folder*): This is a shot folder. The purpose of this folder is to store the shot's project file and exported frames. You can create as many shot folders as there are shots in your film &middot; The shot folder uses this naming scheme: *sc[m]_sh[n]_[name]*. A shot folder takes the scene mnemonic *sc*, and inherits the scene number from its parent scene as *m*. Then, the shot folder is given the mnemonic *sh* (short for 'shot') and a shot number *n*. We keep the scene number with the shot because a shot belongs to a scene.
 
 **Shot project file:** `~/Shot/sq01_chase/sc01/sc01_sh01/sc01_sh01.tvpaint` (*project file*): This is the shot's animation project file. The animation work is done in this project file. We name this file like this: *sc[n]_sh[n].[projectExt]*. It inherits the scene number and the shot number.
 
@@ -329,13 +333,13 @@ The animator passes over a shot or scene several times to complete the animation
 
 ### Roughs
 
-**Roughs:** `~/Shot/sq01_chase/sc01/sc01_sh01/rough` (*folder*): The purpose of this folder is to store frames of the shot's rough animation.
+`~/Shot/sq01_chase/sc01/sc01_sh01/rough` (*folder*): The purpose of this folder is to store frames of the shot's rough animation.
 
 **Rough frame image file:** `~/Shot/sq01_chase/sc01/sc01_sh01/rough/rough_sc01_sh01_f0001.tiff` (*exported file*): This is a frame of the shot's rough animation. This file would typically be exported from the *shot project file*. We name the rough-animation frame like this: `rough_sc[k]_sh[m]_f[n].[exportExt]`. A rough frame is prefixed with 'rough'. It inherits the sequence mnemonic and sequence number as *k*, and it inherit the shot mnemonic and shot number as *m*. The frame is given the mnemonic *f*, and must have a frame number *n*. Lastly, the frame has an file extension *exportExt*. THis is the file extension of whatever file format you decide to use &mdash; whether it is .png, .jpg, .tiff, etc.
 
 ### Tiedowns
 
-**Tiedowns:** `~/Shot/sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): See **Roughs**.
+`~/Shot/sq01_chase/sc01/sc01_sh01/tiedown` (*folder*): See **Roughs**.
 
 **Tiedown frame image file:** `~/Shot/sq01_chase/sc01/sc01_sh01/tiedown/tiedown_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
@@ -347,13 +351,13 @@ The animator passes over a shot or scene several times to complete the animation
 
 ### Line+color
 
-**Line+color:** `~/Shot/sq01_chase/sc01/sc01_sh01/line+color` (*folder*): See **Roughs**.
+`~/Shot/sq01_chase/sc01/sc01_sh01/line+color` (*folder*): See **Roughs**.
 
 **Line+color frame image file** `~/Shot/sq01_chase/sc01/sc01_sh01/line+color/line+color_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
-### Final pass
+### Final
 
-**Final** `~/Shot/sq01_chase/sc01/sc01_sh01/final` (*folder*): See **Roughs**.
+`~/Shot/sq01_chase/sc01/sc01_sh01/final` (*folder*): See **Roughs**.
 
 **Final frame image file** `~/Shot/sq01_chase/sc01/sc01_sh01/final/final_sc01_sh01_f0001.tiff` (*exported file*): See **Rough frame image file**.
 
