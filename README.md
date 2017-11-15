@@ -198,9 +198,9 @@ The naming scheme goes like this: *[information]/_[information]/_[information]/_
                 coverf01_panel1_r1.png
 ```
 
-# Project folder
+# Project
 
-**Project Name:** `DwarfStarWars` (*folder*): This is the project folder. Use it to store the five root folders: `Assets`, `Shot`, `Post`, `Deliverables`, and `Branding`.
+`DwarfStarWars` (*folder*): This is the project directory and the name of the project. We use this directory to store the five main folders: `Assets`, `Shot`, `Post`, `Deliverables`, and `Branding`.
 
 ```
 DwarfStarWars/
@@ -209,9 +209,7 @@ DwarfStarWars/
 
 # Assets
 
-Assets are the things that are need to bring the idea and story to life as an animation.
-
-**Assets:** `DwarfStarWars/Assets` (*root folder*): This is the assets folder, also known as the source folder. It is called the 'Assets' folder because it used to store all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation. Put them all in once pace.
+`DwarfStarWars/Assets/` (*root folder*): This is the assets folder, also known as the source folder. It is called the 'Assets' folder because it used to store all the things needed to bring the idea and story to life as an animation. These assets are the ingredients needed to make the final version of the animation. Put them all in once pace.
 
 ```
 DwarfStarWars/
@@ -220,7 +218,7 @@ DwarfStarWars/
 
 ## Story
 
-**Story:** `~/Assets/story` (*folder*): This is the story folder. Put all writings related to story in this folder.
+`~/Assets/story/` (*folder*): This is the story folder. Put all writings related to story in this folder.
 
 **Story concept:** `~/Assets/story/concept.txt` (*document*): This is the story concept. Document all story concepts here. This can be a text file, image file, word-processing document, whatever.
 
@@ -236,7 +234,23 @@ DwarfStarWars/
 
 ## Audio
 
-**Audio:** `~/Assets/audio` (*folder*): TBD
+`~/Assets/audio/` (*folder*): TBD
+
+**Music:** `~/Assets/audio/music/` (folder): TBD
+
+**Score:** `~/Assets/audio/score/` (folder): TBD
+
+**Voice rough:** `~/Assets/audio/voicerough/` (folder): TBD
+
+**Voice final:** `~/Assets/audio/voicefinal` (folder): TBD
+
+**Sound effects rough:** `~/Assets/audio/sfxrough` (folder): TBD
+
+**Sound effects final:** `~/Assets/audio/sfxfinal` (folder): TBD
+
+**Foley rough:** `~/Assets/audio/foleyrough` (folder): TBD
+
+**Foley final:** `~/Assets/audio/foleyfinal` (folder): TBD
 
 ## Characters
 
