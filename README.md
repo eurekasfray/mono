@@ -207,10 +207,6 @@ The naming scheme goes like this: *[information]/_[information]/_[information]/_
 
 `DwarfStarWars` (*folder*): This is the project directory and the name of the project. We use this directory to store the five main folders: `Assets`, `Shot`, `Post`, `Deliverables`, and `Branding`.
 
-```
-DwarfStarWars/
-```
-
 
 # Assets
 
@@ -218,7 +214,7 @@ DwarfStarWars/
 
 ## Story
 
-`~/Assets/story/` (*folder*): This is the story folder. Put all writings related to story in this folder.
+`~/Assets/story/` (*folder*): This is the story folder. Put all writing related to story in this folder.
 
 ### Concept
 

@@ -1,7 +1,20 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     line-height: 150%;
+}
+
+.u-clearfix::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
 }
 
 .container {
@@ -10,29 +23,91 @@ body {
     margin-right: auto;
 }
 
+.headboard {
+    background-color: #000;
+    background-attachment: fixed;
+}
+
+.nav {
+    color: #505050;
+    background-color: #000;
+}
+
+.nav-blocks {
+
+}
+
+.nav-block {
+
+}
+
+.nav-block--left {
+    float: left;
+}
+
+.nav-block--right {
+    float: right;
+}
+
+.nav-link, .nav-link:visited {
+    color: #505050;
+    text-decoration: none;
+    transition: color .125s;
+}
+
+.nav-link:hover {
+    color: #737373;
+}
+
+.nav-brand {
+
+}
+
+.nav-items {
+    color: #505050;
+    height: 48px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.nav-item {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    margin-left: 3ch;
+}
+
+.nav-item:first-of-type {
+    margin-left: 0ch;
+}
+
 .title {
-    text-align: center;
+    background-color: #000;
+    color: #505050;
+    font-size: 4em;
+    font-weight: 300; /* light */
 }
 
 /**
  * Markdown style
  */
-.markdown p, ul {
+.markdown p, .markdown ul {
     color: #505050;
     margin-bottom: 1em;
 }
 
-.markdown b, strong {
+.markdown b, .markdown strong {
     color: black;
 }
 
-.markdown i, em {
+.markdown i, .markdown em {
     color: #A1A1A1;
     color: #ADBDCC;
     font-weight: bold;
 }
 
-.markdown code, pre {
+.markdown code, .markdown pre {
     font-family: "Roboto Mono", monospace;
     font-size: calc(1em - .05em);
 }
@@ -46,7 +121,12 @@ body {
     overflow-x: auto;
 }
 
-.markdown h1, h2, h3, h4, h5, h6 {
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
 }
 
 .markdown h1 {
