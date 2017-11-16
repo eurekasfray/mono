@@ -14,13 +14,11 @@ function Event(sender) {
 Event.prototype = {
     attach : function(listener) {
         this._listeners.push(listener);
-        console.log("Listener attached " + listener + " to " + this);
     },
     notify : function(args) {
         var i;
         for (i = 0; i < this._listeners.length; i += 1) {
             this._listeners[i](this._sender, args);
-            console.log("Notification sent from " + this._listeners[i]);
         }
     }
 };
@@ -64,17 +62,10 @@ ReadmeModel.prototype = {
                     "Accept": "application/vnd.github.v3+json"
                 },
                 success: function(data) {
-                    // console.log(data.content);
-                    console.log("SUCCESS: Data successfully pulled form GitHub.");
                     var markdown = atob(data.content);
-                    // console.log(markdown);
-                    console.log("SUCCESS: Markdown converted from base64 to ASCII.");
                     _this._htmlify.convert(markdown);
-                    //html = htmlify(markdown); // TODO: Replace with DI object
                 },
                 error: function() {
-                    var msg = "An error has occurred while pulling data.";
-                    console.log(msg);
                     _this.failed.notify();
                 },
                 complete: function(xhr, status) {
@@ -226,15 +217,10 @@ Htmlify.prototype = {
                     "context": "none"
                 }),
                 success: function(data) {
-                    // console.log(data);
-                    console.log("SUCCESS: Markdown converted from Markdown to HTML.");
                     _this.rendered.notify({html : data});
-                    //return data;
                 },
                 error: function() {
-                    console.log("An error has occurred during Markdown conversion.")
                     _this.failed.notify();
-                    return false;
                 },
                 complete: function(xhr, status) {
                     console.log(status);
@@ -258,12 +244,9 @@ function htmlify (markdown) {
                 "context": "none"
             }),
             success: function(data) {
-                // console.log(data);
-                console.log("SUCCESS: Markdown converted from Markdown to HTML.");
                 return data;
             },
             error: function() {
-                console.log("An error has occurred during Markdown conversion.")
                 return false;
             },
             complete: function(xhr, status) {
